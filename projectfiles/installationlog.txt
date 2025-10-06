@@ -1,0 +1,299 @@
+PS C:\Projekt\alfanews> npx create-next-app@latest .      
+The directory alfanews contains files that could conflict:
+
+  News Project.pdf
+  README.md
+
+Either try using a new directory name, or remove the files listed above.
+
+PS C:\Projekt\alfanews> npx create-next-app@latest .
+√ Would you like to use TypeScript? ... No / Yes
+√ Which linter would you like to use? » ESLint
+√ Would you like to use Tailwind CSS? ... No / Yes
+√ Would you like your code inside a `src/` directory? ... No / Yes
+√ Would you like to use App Router? (recommended) ... No / Yes
+√ Would you like to use Turbopack? (recommended) ... No / Yes
+√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
+Creating a new Next.js app in C:\Projekt\alfanews.
+
+Using npm.
+
+Initializing project with template: app-tw
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+
+Installing devDependencies:
+- typescript
+- @types/node
+- @types/react
+- @types/react-dom
+- @tailwindcss/postcss
+- tailwindcss
+- eslint
+- eslint-config-next
+- @eslint/eslintrc
+
+
+added 397 packages, and audited 398 packages in 29s
+
+165 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Success! Created alfanews at C:\Projekt\alfanews
+
+PS C:\Projekt\alfanews> npm install prisma --save-dev
+
+added 32 packages, and audited 430 packages in 12s
+
+170 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Projekt\alfanews> npm install @prisma/client       
+
+added 1 package, and audited 431 packages in 19s
+
+170 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Projekt\alfanews> npx prisma init  
+Fetching latest updates for this subcommand...
+
+✔ Your Prisma schema was created at prisma/schema.prisma
+  You can now open it in your favorite editor.
+
+warn You already have a .gitignore file. Don't forget to add `.env` in it to not commit any private information.
+
+Next steps:
+1. Run prisma dev to start a local Prisma Postgres server.
+2. Define models in the schema.prisma file.
+3. Run prisma migrate dev to migrate your local Prisma Postgres database.
+4. Tip: Explore how you can extend the ORM with scalable connection pooling, global caching, and a managed serverless Postgres database. Read: https://pris.ly/cli/beyond-orm   
+
+More information in our documentation:
+https://pris.ly/d/getting-started
+
+
+PS C:\Projekt\alfanews> npx prisma generate
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+
+✔ Generated Prisma Client (v6.16.3) to .\src\generated\prisma in 93ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+PS C:\Projekt\alfanews> npx prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "alfanewsdb", schema "public" at "localhost:5432"
+
+PostgreSQL database alfanewsdb created at localhost:5432
+
+Your database is now in sync with your Prisma schema. Done in 381ms
+
+✔ Generated Prisma Client (v6.16.3) to .\src\generated\prisma in 94ms
+
+
+
+
+****************************
+
+Added (my) .env file.
+Added models to prisma schemas, only with ids to start with.
+
+added singleton for prisma in src/lib/prisma.ts
+
+Now continuing installations...
+
+****************************
+
+npx prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "alfanewsdb", schema "public" at "localhost:5432"
+
+PostgreSQL database alfanewsdb created at localhost:5432
+
+Your database is now in sync with your Prisma schema. Done in 381ms
+
+✔ Generated Prisma Client (v6.16.3) to .\src\generated\prisma in 94ms
+
+PS C:\Projekt\alfanews> npm i zod
+
+added 67 packages, and audited 432 packages in 3s
+
+171 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Projekt\alfanews> npx shadcn@latest init     
+Need to install the following packages:
+shadcn@3.4.0
+Ok to proceed? (y) y
+
+✔ Preflight checks.
+✔ Verifying framework. Found Next.js.
+✔ Validating Tailwind CSS config. Found v4.
+✔ Validating import alias.
+√ Which color would you like to use as the base color? » Neutral
+✔ Writing components.json.
+✔ Checking registry.
+✔ Updating CSS variables in src\app\globals.css
+✔ Installing dependencies.
+✔ Created 1 file:
+  - src\lib\utils.ts
+
+Success! Project initialization completed.
+You may now add components.
+
+PS C:\Projekt\alfanews> npm install lucide-react  
+
+up to date, audited 437 packages in 2s
+
+174 packages are looking for funding
+  run `npm fund` for details
+
+
+
+
+
+****************************
+
+added src/validations/schemas.ts for our zod-validation schemas.
+
+added BETTER_AUTH_SECRET=(secret) to my .env
+Generate yours at https://www.better-auth.com/docs/installation
+
+added BETTER_AUTH_URL=http://localhost:3000
+
+added Mount Handler for better-auth in src/app/api/auth/[...all]/route.ts
+
+created lib/auth.ts for better-auth.
+
+added schemas for signin and out in validation/schemas.ts
+
+
+Now continuing installations...
+
+****************************
+
+
+
+
+found 0 vulnerabilities
+PS C:\Projekt\alfanews> npm install better-auth
+
+added 35 packages, and audited 472 packages in 6s
+
+178 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+
+
+PS C:\Projekt\alfanews> npx @better-auth/cli generate
+√ The file ./prisma/schema.prisma already exists. Do you want to overwrite the schema to the file? ... yes
+2025-10-06T14:17:25.902Z SUCCESS [Better Auth]: 🚀 Schema was overwritten successfully!
+PS C:\Projekt\alfanews> 
+
+
+
+PS C:\Projekt\alfanews> npx prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "alfanewsdb", schema "public" at "localhost:5432"
+
+Your database is now in sync with your Prisma schema. Done in 443ms
+
+✔ Generated Prisma Client (v6.16.3) to .\src\generated\prisma in 138ms
+
+PS C:\Projekt\alfanews> npx prisma migrate dev --create-only       
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "alfanewsdb", schema "public" at "localhost:5432"
+
+Drift detected: Your database schema is not in sync with your migration history.
+
+The following is a summary of the differences between the expected database schema given your migrations files, and the actual schema of the database.
+
+It should be understood as the set of changes to get from the expected schema to the actual schema.
+
+If you are running this the first time on an existing database, please make sure to read this documentation page:
+https://www.prisma.io/docs/guides/database/developing-with-prisma-migrate/troubleshooting-development
+
+[+] Added tables
+  - Article
+  - Category
+  - Subscription
+  - SubscriptionType
+  - account
+  - session
+  - user
+  - verification
+
+[*] Changed the `account` table
+  [+] Added foreign key on columns (userId)
+
+[*] Changed the `session` table
+  [+] Added unique index on columns (token)
+  [+] Added foreign key on columns (userId)
+
+[*] Changed the `user` table
+  [+] Added unique index on columns (email)
+
+We need to reset the "public" schema at "localhost:5432"
+
+You may use prisma migrate reset to drop the development database.
+All data will be lost.
+PS C:\Projekt\alfanews> prisma migrate reset
+prisma: The term 'prisma' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Projekt\alfanews> npx prisma migrate reset
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "alfanewsdb", schema "public" at "localhost:5432"
+
+√ Are you sure you want to reset your database? All data will be lost. ... yes
+
+Database reset successful
+
+
+✔ Generated Prisma Client (v6.16.3) to .\src\generated\prisma in 115ms
+
+PS C:\Projekt\alfanews> npx prisma migrate dev --name init
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "alfanewsdb", schema "public" at "localhost:5432"
+
+Applying migration `20251006142546_init`
+
+The following migration(s) have been created and applied from new schema changes:
+
+prisma\migrations/
+  └─ 20251006142546_init/
+    └─ migration.sql
+
+Your database is now in sync with your schema.
+
+✔ Generated Prisma Client (v6.16.3) to .\src\generated\prisma in 110ms
+
+
+PS C:\Projekt\alfanews> 
+
+
+
+
+So now the techstack should be installed and prepared for.
+
+
+

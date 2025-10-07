@@ -14,6 +14,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Author {
+    id String @id @default(uuid())
+}
+
 model Article {
   id String @id @default(uuid())
 }
@@ -38,7 +42,7 @@ model User {
   image         String?
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @default(now()) @updatedAt
-  role          String?
+  role          String    @default("user")
   banned        Boolean?  @default(false)
   banReason     String?
   banExpires    DateTime?

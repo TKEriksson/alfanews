@@ -338,8 +338,9 @@ PS C:\Projekt\alfanews>
 ***********************************
 
 
-(So now i go to stipe and create a user and try to create a api secret. Setting STRIPE_WEBHOOK_SECRET= in my .env)
-i went in to sandbox, and got a key (secret) there.
+(So now i go to stipe.com and create a user and try to create a api secret. Setting STRIPE_WEBHOOK_SECRET= in my .env)
+i created a sandbox, and got a key (secret) there. Just go the dashboard!
+My adress was: https://dashboard.stripe.com/acct_1SFXM41PAHMjKtKV/test/dashboard
 I dont find the webhook though, so just have some random chars there now in my env. But i found the SECRET KEY.
 
 

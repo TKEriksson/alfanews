@@ -15,7 +15,7 @@ datasource db {
 }
 
 model Author {
-    id String @id @default(uuid())
+  id String @id @default(uuid())
 }
 
 model Article {
@@ -48,6 +48,8 @@ model User {
   banExpires    DateTime?
   sessions      Session[]
   accounts      Account[]
+
+  stripeCustomerId String?
 
   @@unique([email])
   @@map("user")
